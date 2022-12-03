@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.4</title>
+</head>
+<body>
+    <h2>Jumlah Dua Bilangan</h2>
+
+    <form>
+        <input type="number" id="bilangan1" onchange="hitung_hasil()" />
+        <br>
+        +
+        <input type="number" id="bilangan2" onchange="hitung_hasil1()" />
+        <br>
+        =
+        <input type="number"  id="hasil" readonly />
+        <br>
+    </form>
+
+    <script>
+        function hitung_hasil1() {
+            // Tangkap nilai input jam masuk ke variabel m
+            let bilangan1 = document.getElementById("bilangan1").value;
+            // Tangkap nilai input jam keluar ke variabel k
+            let bilangan2 = document.getElementById("bilangan2").value;
+            // Buat total waktu parkir
+            let hasilpertambahan = parseFloat(bilangan1) + parseFloat(bilangan2);
+
+            // Buat tarif total
+            
+            
+            // Tangkap hasil tarif total dan tampilkan
+            document.getElementById("hasil").value = hasilpertambahan;
+        }
+    </script>    
+</body>
+</html>
