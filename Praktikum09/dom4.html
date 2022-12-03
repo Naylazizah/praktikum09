@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 9.4</title>
+</head>
+<body>
+    <h2>Jumlah Dua Bilangan</h2>
+
+    <form>
+        Bilangan Satu : <input type="number" id="satu">
+        <br>
+        Bilangan Dua : <input type="number" id="dua">
+        <br>
+        <input type="button"  value="=" onchange="hasil();">
+        <br>
+        Biaya :<input type="text" id="biaya">
+    </form>
+
+    <script>
+        function hasil() {
+            // Tangkap nilai input jam masuk ke variabel m
+            let satu = document.getElementById("satu").value;
+            // Tangkap nilai input jam keluar ke variabel k
+            let dua = document.getElementById("dua").value;
+            // Buat total waktu parkir
+            let t = satu + dua;
+
+            // Buat tarif total
+            let t  = satu + dua;
+            
+            // Tangkap hasil tarif total dan tampilkan
+            document.getElementById("biaya").value = "" + ;
+        }
+    </script>    
+</body>
+</html>
